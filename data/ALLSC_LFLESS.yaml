@@ -1,0 +1,27 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+#train: /home/paidelin/zfy/common/data/PCB_train_data/data/VOC2007/images/train/  # 128 images
+#val: /home/paidelin/zfy/common/data/PCB_train_data/data/VOC2007/images/val/  # 128 images
+
+train: /home/paidelin/zfy/common/data/NEU-DET/NEU-DET/VOC2007
+val: /home/paidelin/zfy/common/data/NEU-DET/NEU-DET/VOC2007
+
+# number of classes
+nc: 6
+#
+## class names
+#names: ['missing_hole', 'mouse_bite', 'open_circuit', 'short', 'spur','spurious_copper']
+#
+#nc: 6
+#nc: 6
+names: ['crazing','inclusion','patches','pitted_surface','rolled-in_scale','scratches']
+
+
